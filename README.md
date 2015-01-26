@@ -11,7 +11,7 @@ api.Login();
 
 // Build JSON request as dynamic object
 dynamic param = new ExpandoObject();
-params.output = new List<string>{ "triggerid", "description", "priority" };
+param.output = new[] { "triggerid", "description", "priority" };
 param.filter = new ExpandoObject();
 param.filter.value = 1;
 param.sortfield = "priority";
