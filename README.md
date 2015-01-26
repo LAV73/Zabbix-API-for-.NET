@@ -1,5 +1,5 @@
 # Zabbix API for .NET
-A thin wrapper of Zabbix API for .NET
+A thin wrapper of Zabbix API for .NET 4.x
 #Overview
 This library allows you to send all kind of Zabbix API methods like _host.get_, _item.create_, _trigger.delete_ etc. __ApiClient.Call__ method takes a Zabbix API method name and a dynamic object. 
 ```C#
