@@ -3,7 +3,6 @@ A thin wrapper of Zabbix API for .NET
 # Getting Started
 ##Retrieving triggers in problem state
 https://www.zabbix.com/documentation/2.4/manual/api/reference/trigger/get
-###C# code
 ```C#
 var api = new ApiClient("http://zabbix.example.com/api_jsonrpc.php", "user1", "pass");
 
