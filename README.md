@@ -60,6 +60,20 @@ param.sortorder = "DESC";
 // Call method sends JSON string to Zabbix server
 Response response = api.Call("trigger.get", param);
 
+// Retrieve the result as dynamic from the response object. Console output is like this.
+//   triggerid: 13907
+//   description: Zabbix self-monitoring processes < 100% busy
+//   priority: 4
+//   triggerid: 13824
+//   description: Zabbix discoverer processes more than 75% busy
+//   priority: 3
+foreach (dynamic trigger in response.Result)
+{
+    Console.WriteLine("triggerid: {0}", trigger.triggerid);
+    Console.WriteLine("description: {0}", trigger.description);
+    Console.WriteLine("priority: {0}", trigger.priority);
+}
+
 // Cleanup
 api.Logout();
 ```
