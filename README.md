@@ -1,9 +1,16 @@
-# Zabbix API for .NET
+#Zabbix API for .NET
 A thin wrapper of Zabbix API for .NET 4.x
+#Installation
+NuGet package is available.
+https://www.nuget.org/packages/ZabbixApi/
 #Overview
-This library allows you to send all kind of Zabbix API methods like _host.get_, _item.create_, _trigger.delete_ etc. __ApiClient.Call__ method takes a Zabbix API method name and a dynamic object. 
+This library allows you to send all kind of Zabbix API methods like _host.get_, _item.create_, _trigger.delete_ etc. First, you need to instantiate __ApiClient__ class. The signiture is here.
 ```C#
-Response Call(string method, dynamic param)
+public ApiClient(string url, string user, string password)
+```
+__ApiClient.Call__ method takes a Zabbix API method name and a dynamic object. 
+```C#
+public Response Call(string method, dynamic param)
 ```
 Call method sends JSON string like this to Zabbix server:
 ```javascript
