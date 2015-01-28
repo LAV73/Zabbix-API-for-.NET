@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/yosqueoy/Zabbix-API-for-.NET.svg)](https://travis-ci.org/yosqueoy/Zabbix-API-for-.NET)
 #Zabbix API for .NET
 A thin wrapper of Zabbix API for .NET 4.x
 #Installation
