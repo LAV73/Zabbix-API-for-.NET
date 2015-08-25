@@ -13,7 +13,7 @@ __ApiClient.Call__ method takes a Zabbix API method name and a dynamic object.
 ```C#
 public Response Call(string method, dynamic param)
 ```
-Call method sends JSON string like this to Zabbix server:
+__Call__ method sends JSON string like this to Zabbix server:
 ```javascript
 {
     "jsonrpc": "2.0",
@@ -23,7 +23,7 @@ Call method sends JSON string like this to Zabbix server:
     "id": 1
 }
 ```
-The __Call__ method returns the server response as __Response__ object. 
+__Call__ method returns the server response as __Response__ object. 
 ```javascript
 {
     "jsonrpc": "2.0",
