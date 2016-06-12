@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/yosqueoy/Zabbix-API-for-.NET.svg)](https://travis-ci.org/yosqueoy/Zabbix-API-for-.NET) [![NuGet Count](https://img.shields.io/nuget/dt/ZabbixApi.svg)](https://www.nuget.org/packages/ZabbixApi)
+[![Build Status](https://travis-ci.org/yosqueoy/Zabbix-API-for-.NET.svg)](https://travis-ci.org/yosqueoy/Zabbix-API-for-.NET) 
 #Zabbix API for .NET
 A thin wrapper of Zabbix API for .NET 4.x
 #Installation
