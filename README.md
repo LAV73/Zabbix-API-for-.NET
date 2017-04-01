@@ -1,10 +1,11 @@
 [![Build Status](https://travis-ci.org/yosqueoy/Zabbix-API-for-.NET.svg)](https://travis-ci.org/yosqueoy/Zabbix-API-for-.NET) 
-#Zabbix API for .NET
+
+# Zabbix API for .NET
 A thin wrapper of Zabbix API for .NET 4.x
-#Installation
+# Installation
 NuGet package is available.
 https://www.nuget.org/packages/ZabbixApi/
-#Overview
+# Overview
 This library allows you to send all kind of Zabbix API methods like _host.get_, _item.create_, _trigger.delete_ etc. First, you need to instantiate __ApiClient__ class. The signiture is here.
 ```C#
 public ApiClient(string url, string user, string password)
@@ -41,8 +42,8 @@ __Call__ method returns the server response as __Response__ object.
 }
 ```
 You can access the first itemid by __Response.Result[0].itemid__ dynamic property in your .NET code.
-#Examples
-##Retrieving triggers in problem state
+# Examples
+## Retrieving triggers in problem state
 https://www.zabbix.com/documentation/2.4/manual/api/reference/trigger/get
 ```C#
 var api = new ApiClient("http://zabbix.example.com/api_jsonrpc.php", "user1", "pass");
@@ -78,7 +79,7 @@ foreach (dynamic trigger in response.Result)
 // Cleanup
 api.Logout();
 ```
-###Generated JSON
+### Generated JSON
 Request:
 ```javascript
 {
@@ -119,7 +120,7 @@ Response:
     "id": 1
 }
 ```
-##Searching by host inventory data
+## Searching by host inventory data
 https://www.zabbix.com/documentation/2.4/manual/api/reference/host/get
 ```C#
 var api = new ApiClient("http://zabbix.example.com/api_jsonrpc.php", "user1", "pass");
@@ -140,7 +141,7 @@ Response response = api.Call("host.get", param);
 // Cleanup
 api.Logout();
 ```
-###Generated JSON
+### Generated JSON
 Request:
 ```javascript
 {
