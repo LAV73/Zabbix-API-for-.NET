@@ -47,7 +47,7 @@ namespace Ysq.Zabbix
             using (var wc = new WebClient())
             {
                 wc.Headers.Add("Content-Type", "application/json-rpc");
-                jsonResponse = wc.UploadString(_url, jsonRequest);
+                jsonResponse = System.Text.Encoding.UTF8.GetString(wc.UploadData(_url, System.Text.Encoding.UTF8.GetBytes(jsonRequest)));
             }
 
             var response = JsonConvert.DeserializeObject<Response>(jsonResponse);
